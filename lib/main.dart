@@ -1,4 +1,4 @@
-import 'package:wear_tamagotchi/counter/counter_page.dart';
+import 'package:wear_tamagotchi/home/egg.dart';
 import 'package:flutter/material.dart';
 import 'package:wear/wear.dart';
 
@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AmbientMode(
-        child: const CounterPage(),
+        child: const Home(),
         builder: (context, mode, child) {
           ///title: 'Flutter Demo',
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             theme: ThemeData(
               visualDensity: VisualDensity.compact,
               useMaterial3: true,
